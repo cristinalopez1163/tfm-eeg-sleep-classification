@@ -19,7 +19,8 @@ Las arquitecturas de Deep Learning mejoran sistemáticamente la detección de la
 
 | Métrica        | Valor   |
 |----------------|---------|
-| F1-macro       | 98.1 %  |
+| Accuracy       | 98.34 % |
+| F1-macro       | 98.11 % |
 | Kappa de Cohen | 96.21 % |
 
 ## Estructura del proyecto
