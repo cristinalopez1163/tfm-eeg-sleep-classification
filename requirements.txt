@@ -1,0 +1,22 @@
+# Manipulación de datos y cálculo numérico
+numpy>=2.0        
+pandas>=2.0
+scipy>=1.11
+
+# Visualización
+matplotlib>=3.8
+plotly>=5.20
+
+# Machine Learning (baseline)
+scikit-learn>=1.4
+xgboost>=2.0
+joblib>=1.3
+
+# Procesamiento de señales EEG
+mne>=1.6
+
+# Deep Learning
+torch>=2.2
+
+# App de demostracion
+streamlit>=1.32

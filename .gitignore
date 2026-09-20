@@ -1,0 +1,17 @@
+# Datos y resultados generados 
+resources/raw
+resources/processed/
+resources/metadata/
+scripts/test_data/
+results/logs/
+results/figures/
+results/tables/
+results/checkpoints/
+
+# Archivos temporales y configuración
+.ipynb_checkpoints/
+__pycache__/
+.vscode/
+
+# Bibliografía
+literature/*.pdf
