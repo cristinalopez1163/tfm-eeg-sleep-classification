@@ -65,7 +65,7 @@ Las arquitecturas de Deep Learning mejoran sistemáticamente la detección de la
 
 ## Dataset
 
-Este repositorio **no incluye los datos**. Es necesario descargar el subconjunto *Sleep Cassette* de Sleep-EDF Expanded desde PhysioNet y colocar todos los ficheros `.edf` (PSG e hipnogramas) en `resources/raw/`:
+Este repositorio no incluye los datos. Es necesario descargar el subconjunto Sleep Cassette de Sleep-EDF Expanded desde PhysioNet y colocar todos los ficheros `.edf` (PSG e hipnogramas) en `resources/raw/`:
 
 
 ## Instalación
@@ -77,7 +77,7 @@ python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 ```
-Si vas a entrenar los modelos de Deep Learning con GPU, instala primero la versión de PyTorch correspondiente a tu CUDA desde la [página oficial](https://pytorch.org/get-started/locally/)
+Si los modelos de Deep Learning se van a entrenar utilizando la GPU, es necesario instalar previamente la versión de PyTorch compatible con la versión de CUDA disponible en el sistema. [Página oficial](https://pytorch.org/get-started/locally/)
 
 ## Uso
 
@@ -93,7 +93,7 @@ RUN_CNN_TRANSFORMER = True
 RUN_CNN_CONFORMER = True
 ```
 
-Actívalos según el experimento que quieras realizar y ejecuta:
+Activar según el experimento que se desee realizar y ejecutar:
 
 ```bash
 python src/main.py
