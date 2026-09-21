@@ -33,7 +33,7 @@ def summary_table():
 
     out_path = os.path.join(TABLES_DIR, "comparison_summary.csv")
     summary.to_csv(out_path)
-    print("\n=== Resumen media +- std ===\n", summary)
+    print("\n=== Resumen media +- std ===\n")
     print(summary)
     print(f"Tabla resumen guardada en {TABLES_DIR}")
 

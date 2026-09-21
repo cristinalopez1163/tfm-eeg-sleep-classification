@@ -37,7 +37,9 @@ def create_epochs(raw):
     }
 
     # Creación de los epochs (duración de 30 segundos)
-    events, event_id = mne.events_from_annotations(raw, event_id=sleep_stages, chunk_duration=30.0) # eventos
+    events, _ = mne.events_from_annotations(raw, event_id=sleep_stages, chunk_duration=30.0) # eventos
+    event_id = {'Wake': 0, 'Sleep': 1}
+    
     epochs = mne.Epochs(
         raw, events, event_id=event_id, tmin=0, tmax=30 - 1/raw.info['sfreq'], 
         baseline=None, preload=True, verbose=False)

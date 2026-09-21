@@ -77,6 +77,7 @@ python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 ```
+Si vas a entrenar los modelos de Deep Learning con GPU, instala primero la versión de PyTorch correspondiente a tu CUDA desde la [página oficial](https://pytorch.org/get-started/locally/)
 
 ## Uso
 

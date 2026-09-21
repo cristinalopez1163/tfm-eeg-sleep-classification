@@ -36,10 +36,10 @@ mne.set_log_level("ERROR")
 warnings.filterwarnings("ignore")
 
 # Experimentos a ejecutar 
-RUN_ML = False
-RUN_CNN1D = False
-RUN_CNN_BILSTM = False
-RUN_CNN_TRANSFORMER = False
+RUN_ML = True
+RUN_CNN1D = True
+RUN_CNN_BILSTM = True
+RUN_CNN_TRANSFORMER = True
 RUN_CNN_CONFORMER = True
 SEQUENCE_MODELS = {
     "CNN_BiLSTM": (CNNBiLSTM, RUN_CNN_BILSTM),
