@@ -86,10 +86,10 @@ Si vas a entrenar los modelos de Deep Learning con GPU, instala primero la versi
 `src/main.py` construye (o reutiliza, si ya existe) el dataset preprocesado a partir de `resources/raw/`, y ejecuta los experimentos que estén activados. Qué experimentos ejecutar se controla con las variables al inicio del script:
 
 ```python
-RUN_ML = False
-RUN_CNN1D = False
-RUN_CNN_BILSTM = False
-RUN_CNN_TRANSFORMER = False
+RUN_ML = True
+RUN_CNN1D = True
+RUN_CNN_BILSTM = True
+RUN_CNN_TRANSFORMER = True
 RUN_CNN_CONFORMER = True
 ```
 
