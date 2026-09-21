@@ -11,7 +11,7 @@ El trabajo se ha desarrollado sobre el subconjunto **Sleep Cassette** de la base
   - **CNN1D**: clasifica cada epoch de forma independiente, a partir de la señal en crudo.
   - **CNN1D + BiLSTM**, **CNN1D + Transformer** y **CNN1D + Conformer**: incorporan contexto temporal mediante ventanas de epochs consecutivos, combinando la misma CNN1D como extractor de características con un mecanismo de modelado de secuencias distinto en cada caso.
 
-Todos los modelos se entrenan y evalúan bajo un mismo protocolo (misma partición por sujeto, mismas semillas y misma estrategia de validación), lo que permite una comparación equitativa entre enfoques.
+Todos los modelos se entrenan y evalúan bajo el mismo protocolo, lo que permite una comparación equitativa entre enfoques.
 
 ### Resultados principales
 
@@ -60,7 +60,7 @@ Las arquitecturas de Deep Learning mejoran sistemáticamente la detección de la
     │   ├── cross_validation.py   # validación cruzada del baseline de ML
     │   └── train_eval_dl.py      # entrenamiento/evaluación de los modelos de DL
     └── utils/
-        └── labels.py              # definición de las clases (Wake / Sleep)
+        └── labels.py             # definición de las clases (Wake / Sleep)
 ```
 
 ## Dataset
